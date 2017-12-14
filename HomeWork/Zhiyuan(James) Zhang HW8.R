@@ -7,6 +7,7 @@ rm(list=ls())
 library(class)
 library(ggplot2)
 data(iris)
+View(iris)
 
 clusP <- hclust(dist(iris[, 3:4]), method = 'average')
 plot(clusP)
